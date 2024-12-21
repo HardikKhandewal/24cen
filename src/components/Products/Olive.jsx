@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Spirit = () => {
+const Olive = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
     console.log(".");
   }, []);
+
   const categories = [
-    { name: 'Spirit closures', color: 'bg-orange-500' },
+    { name: 'Spirit closures', color: 'bg-blue-600' },
     { name: 'Wine closures', color: 'bg-blue-600' },
     { name: 'Pharma closures', color: 'bg-blue-600' },
-    { name: 'Olive oil closures', color: 'bg-blue-600' },
+    { name: 'Olive oil closures', color: 'bg-orange-500' },
     { name: 'Printed metal sheets', color: 'bg-blue-600' }
   ];
 
@@ -33,7 +35,7 @@ const Spirit = () => {
       </div>
       
       {/* Image Gallery */}
-      <h2 className="text-2xl font-bold mb-8 text-center">Spirit Closures</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center">Olive Oil Closures</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
           <div key={item} className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
@@ -47,4 +49,4 @@ const Spirit = () => {
   );
 };
 
-export default Spirit;
+export default Olive;
