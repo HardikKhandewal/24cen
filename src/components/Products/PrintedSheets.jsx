@@ -26,7 +26,7 @@ const PrintedSheets = () => {
             key={index}
           >
             <button
-              className={`${category.color} text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
+              className={`${category.color} text-white  w-48 h-12 flex items-center justify-center rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
             >
               {category.name}
             </button>
