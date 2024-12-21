@@ -1,0 +1,60 @@
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+import React from 'react';
+import { useState } from 'react';
+
+const Milestones = ()=>{
+
+    const [counter1, setCounter1] = useState(false);
+    const [counter2, setCounter2] = useState(false);
+    const [counter3, setCounter3] = useState(false);
+
+    return(
+        <>
+            <div id="mainMile" className="my-5 mx-auto w-full flex flex-col">
+                <h1 className="mx-auto text-center text-5xl text-[#f59542] font-bold">Milestones</h1>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 w-3/4 mx-auto my-4">
+                    <div className="bg-white  text-center h-64"><img className="h-full w-full object-cover" src="https://img.pikbest.com/wp/202405/face-to-3d-rendered-image-of-two-opposing-chess-teams-standing-on-the-chessboard_9853093.jpg!bw700" alt="" /></div>
+                    <div className="bg-white  text-center h-64 flex justify-center items-center">
+                    <ScrollTrigger onEnter={()=>setCounter1(true)} onExit={()=>setCounter1(false)}>
+
+                       <div className="h-full w-full flex flex-col justify-center items-center my-auto" >
+                            <div className="text-center text-[#f59542] text-8xl">{counter1 && <CountUp end={13} duration={5} />}+</div>
+                            <div className="text-sm">Countries Products Exported</div>
+                        </div> 
+                    </ScrollTrigger>
+                    </div>
+                    <div className="bg-white  text-center h-64"><img className="h-full w-full object-cover" src="data:image/jpeg;base64,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" alt="" /></div>
+                    <div className="bg-white  text-center h-64">
+                    <div className="h-full w-full flex flex-col justify-center items-center" >
+                            <div className="text-center text-[#f59542] text-4xl">9001-2015</div>
+                            <div className="text-sm">ISO certified</div>
+                        </div> 
+                    </div>
+                   
+                    <ScrollTrigger onEnter={()=>setCounter2(true)} onExit={()=>setCounter2(false)}>
+                    <div className="bg-white  text-center h-64">
+                    <div className="h-full w-full flex flex-col justify-center items-center" >
+                            <div className="text-center text-[#f59542] text-8xl">{counter2 && <CountUp end={15} duration={5} />}</div>
+                            <div className="text-sm">Years of Experince in Industries</div>
+                        </div> 
+                    </div>
+                    </ScrollTrigger>
+                    <div className="bg-white  text-center h-64"><img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2xvYmV8ZW58MHx8MHx8fDA%3D" alt="" /></div>
+                    <ScrollTrigger onEnter={()=>setCounter3(true)} onExit={()=>setCounter3(false)}>
+                    <div className="bg-white  text-center h-64">
+                    <div className="h-full w-full flex flex-col justify-center items-center" >
+                            <div className="text-center text-[#f59542] text-8xl">{counter3 && <CountUp end={150} duration={5} />}+</div>
+                            <div className="text-sm">Satisfied Customers</div>
+                        </div> 
+                    </div>
+                    </ScrollTrigger>
+                    <div className="bg-gray-200  text-center h-64"><img className="h-full w-full object-cover" src="https://img.freepik.com/premium-vector/iso-9001-2015-certification-iso-90012015-logo-iso-9000-certification_526569-644.jpg" alt="" /></div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Milestones;
