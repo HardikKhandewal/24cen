@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Products = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
     console.log(".");
@@ -26,7 +25,7 @@ const Products = () => {
             key={index}
           >
             <button
-              className={`${category.color} text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
+              className={`${category.color} text-white w-48 h-12 flex items-center justify-center rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
             >
               {category.name}
             </button>
