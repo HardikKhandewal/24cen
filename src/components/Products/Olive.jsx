@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Olive = () => {
-
+const Spirit = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
     console.log(".");
   }, []);
-
   const categories = [
-    { name: 'Spirit closures', color: 'bg-blue-600' },
+    { name: 'Spirit closures', color: 'bg-orange-500' },
     { name: 'Wine closures', color: 'bg-blue-600' },
     { name: 'Pharma closures', color: 'bg-blue-600' },
-    { name: 'Olive oil closures', color: 'bg-orange-500' },
+    { name: 'Olive oil closures', color: 'bg-blue-600' },
     { name: 'Printed metal sheets', color: 'bg-blue-600' }
   ];
 
@@ -26,7 +24,7 @@ const Olive = () => {
             key={index}
           >
             <button
-              className={`${category.color} text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
+              className={`${category.color} text-white  w-48 h-12 flex items-center justify-center rounded-md hover:opacity-90 transition-opacity text-lg font-medium`}
             >
               {category.name}
             </button>
@@ -35,7 +33,7 @@ const Olive = () => {
       </div>
       
       {/* Image Gallery */}
-      <h2 className="text-2xl font-bold mb-8 text-center">Olive Oil Closures</h2>
+      <h2 className="text-2xl font-bold mb-8 text-center">Spirit Closures</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
           <div key={item} className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
@@ -49,4 +47,4 @@ const Olive = () => {
   );
 };
 
-export default Olive;
+export default Spirit;
