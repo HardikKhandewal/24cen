@@ -48,37 +48,60 @@ const HamburgerMenu = () => {
         style={{ width: "70%" }} // Adjust width as needed
       >
         <ul className="menu bg-base-200 rounded-box w-full">
+          <Link to="/">
           <li>
-            <a className="hover:bg-[#F59542]">Home</a>
+            <span className="hover:bg-[#F59542]">Home</span>
           </li>
+          </Link>
+
+          <Link to="/AboutUs">
           <li>
-            <a className="hover:bg-[#F59542]">About Us</a>
+            <span className="hover:bg-[#F59542]">About Us</span>
           </li>
+          </Link>
+
           <li>
             <details open>
               <summary className="hover:bg-[#F59542]">Products</summary>
               <ul>
+                <Link to="/products/spiritclosures">
                 <li>
-                  <a className="hover:bg-[#F59542]">Spirit Clousers</a>
+                  <span className="hover:bg-[#F59542]">Spirit Clousers</span>
                 </li>
+                </Link>
+
+                <Link to="/products/wineclosures">
                 <li>
-                  <a className="hover:bg-[#F59542]">Wine Clousers</a>
+                  <span className="hover:bg-[#F59542]">Wine Clousers</span>
                 </li>
+                </Link>
+
+                <Link to="/products/pharmaclosures">
                 <li>
-                  <a className="hover:bg-[#F59542]">Pharma Clousers</a>
+                  <span className="hover:bg-[#F59542]">Pharma Clousers</span>
                 </li>
+                </Link>
+
+                <Link to="/products/oliveoilclosures">
                 <li>
-                  <a className="hover:bg-[#F59542]">Olive Oil Clousers</a>
+                  <span className="hover:bg-[#F59542]">Olive Oil Clousers</span>
                 </li>
+                </Link>
+
+                <Link to="/products/printedmetalsheets">
                 <li>
-                  <a className="hover:bg-[#F59542]">Plain and Printed Aluminium Sheets</a>
+                  <span className="hover:bg-[#F59542]">Plain and Printed Aluminium Sheets</span>
                 </li>
+                </Link>
               </ul>
             </details>
           </li>
+
+          <Link to="Contact">
           <li>
-            <a className="hover:bg-[#F59542]">Contact</a>
+            <span className="hover:bg-[#F59542]">Contact</span>
           </li>
+          </Link>
           
         </ul>
       </div>
