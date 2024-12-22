@@ -45,33 +45,41 @@ const HamburgerMenu = () => {
         className={`fixed top-0 left-0 h-full bg-white shadow-md p-4 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
-        style={{ width: "50%" }} // Adjust width as needed
+        style={{ width: "70%" }} // Adjust width as needed
       >
-        <ul className="space-y-4 mt-8">
-        <Link to="/">
-          <li className="border-b border-gray-300 pb-2">
-            
-            <span className="text-black hover:text-blue-500">
-              Home
-            </span>
+        <ul className="menu bg-base-200 rounded-box w-full">
+          <li>
+            <a className="hover:bg-[#F59542]">Home</a>
           </li>
-        </Link>
-
-        <Link to = "AboutUs">
-          <li className="border-b border-gray-300 pb-2">
-            <span className="text-black hover:text-blue-500">
-              About
-            </span>
+          <li>
+            <a className="hover:bg-[#F59542]">About Us</a>
           </li>
-        </Link>
-
-        <Link to = "Contact">
-          <li className="pb-2">
-            <span className="text-black hover:text-blue-500">
-              Contact
-            </span>
+          <li>
+            <details open>
+              <summary className="hover:bg-[#F59542]">Products</summary>
+              <ul>
+                <li>
+                  <a className="hover:bg-[#F59542]">Spirit Clousers</a>
+                </li>
+                <li>
+                  <a className="hover:bg-[#F59542]">Wine Clousers</a>
+                </li>
+                <li>
+                  <a className="hover:bg-[#F59542]">Pharma Clousers</a>
+                </li>
+                <li>
+                  <a className="hover:bg-[#F59542]">Olive Oil Clousers</a>
+                </li>
+                <li>
+                  <a className="hover:bg-[#F59542]">Plain and Printed Aluminium Sheets</a>
+                </li>
+              </ul>
+            </details>
           </li>
-        </Link>
+          <li>
+            <a className="hover:bg-[#F59542]">Contact</a>
+          </li>
+          
         </ul>
       </div>
     </div>
