@@ -49,7 +49,7 @@ const HamburgerMenu = () => {
       >
         <ul className="menu bg-base-200 rounded-box w-full">
           <li>
-            <a className="hover:bg-[#F59542]">Hoome</a>
+            <a className="hover:bg-[#F59542]">Home</a>
           </li>
           <li>
             <a className="hover:bg-[#F59542]">About Us</a>
