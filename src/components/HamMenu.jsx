@@ -48,7 +48,7 @@ const HamburgerMenu = () => {
         style={{ width: "70%" }} // Adjust width as needed
       >
         <ul className="menu bg-base-200 rounded-box w-full">
-          <Link to="/">
+          <Link to="/home">
           <li>
             <span className="hover:bg-[#F59542]">Home</span>
           </li>
