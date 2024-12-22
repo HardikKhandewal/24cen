@@ -68,7 +68,7 @@ const Navbar = () => {
               </ul>
             </div>
            
-            <Link to="/home"><li  className={`hover:after:scale-x-100 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:origin-left after:bg-[#f59542] after:duration-500 after:transition-transform hover:text-[#f59542] duration-300 transition-colors mx-2 cursor-pointer ${
+            <Link to="/Contact"><li  className={`hover:after:scale-x-100 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:origin-left after:bg-[#f59542] after:duration-500 after:transition-transform hover:text-[#f59542] duration-300 transition-colors mx-2 cursor-pointer ${
       isActive("/Contact") ? "text-[#f59542] after:scale-x-100" : "text-black after:scale-x-0"
     }`}>Contact</li></Link> 
           </ul>
