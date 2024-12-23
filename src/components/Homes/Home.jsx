@@ -14,8 +14,8 @@ const Home = () => {
     <>
       <Carousel />
       <AboutSm />
-      <Milestones />
       <ShowcasePro />
+      <Milestones />
       <WhyUs />
     </>
   );
