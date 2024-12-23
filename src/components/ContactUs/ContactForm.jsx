@@ -41,6 +41,7 @@ const ContactForm = () => {
         <div>
           <input
             name = "user_phone"
+            required
             type="number"
             placeholder="Phone"
             className="w-full bg-transparent border-b border-gray-600 p-2 outline-none focus:border-gray-400 transition-colors"
