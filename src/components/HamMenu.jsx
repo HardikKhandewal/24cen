@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
   }, [isOpen]);
 
   return (
-    <div className="flex items-center min-[1030px]:hidden justify-start my-auto">
+    <div className="flex items-center min-[1022px]:hidden justify-start my-auto">
       {/* Hamburger Icon */}
       <button
         className="flex flex-col items-center justify-center w-8 h-8 space-y-1 group"

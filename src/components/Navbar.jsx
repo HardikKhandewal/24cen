@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
        
         <div id="menu" className="flex justify-start my-auto max-[1022px]:hidden">
-          <ul className={`menu text-2xl menu-vertical lg:menu-horizontal bg-base-200 mx-2 gap-5 rounded-box transition-all duration-300 ${isScrolled ? 'text-xl' : 'text-2xl'}`}>
+          <ul className={`menu text-2xl menu-horizontal bg-base-200 mx-2 gap-5 rounded-box transition-all duration-300 ${isScrolled ? 'text-xl' : 'text-2xl'}`}>
             <Link to="/home"><li  className={`hover:after:scale-x-100 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:origin-left after:bg-[#f59542] after:duration-500 after:transition-transform hover:text-[#f59542] duration-300 transition-colors mx-2 cursor-pointer ${
       isActive("/home") ? "text-[#f59542] after:scale-x-100" : "text-black after:scale-x-0"
     }`}>Home</li></Link>
