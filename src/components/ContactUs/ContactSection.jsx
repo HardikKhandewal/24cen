@@ -1,58 +1,53 @@
 import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <div className="bg-slate-800 text-gray-300 p-8 max-w-md rounded-lg">
+    <div className="bg-slate-800 text-gray-300 h-[360px] p-8 w-[480px] rounded-l-3xl">
       <div className="grid grid-cols-2 gap-8">
         {/* Address Section */}
         <div className="flex flex-col items-start">
-          <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
-            <MapPin className="w-6 h-6" />
+          <div className="flex items-center mx-auto justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
+            {/* <MapPin className="w-6 h-6" /> */}
+            <img className='h-6 w-6' src="https://img.icons8.com/?size=100&id=0gQCRCDXNz1D&format=png&color=FFFFFF" alt="" />
           </div>
-          <h3 className="text-sm text-gray-400 mb-2">ADDRESS:</h3>
-          <p className="text-sm">
-            121 Rock Street, 21 Avenue,<br />
-            New York, NY 92103-9000
+          <h3 className="text-sm mx-auto text-gray-400 mb-2">ADDRESS:</h3>
+          <p className="text-sm mx-auto text-center">
+          Plot 310, Sector 1, Pithampur,<br/> Dist - Dhar , (M P.) 454775 
           </p>
         </div>
 
         {/* Email Section */}
         <div className="flex flex-col items-start">
-          <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
-            <Mail className="w-6 h-6" />
+          <div className="flex mx-auto items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
+            {/* <Mail className="w-6 h-6" /> */}
+            <img className='w-6 h-6' src="https://img.icons8.com/?size=100&id=86862&format=png&color=FFFFFF" alt="" />
           </div>
-          <h3 className="text-sm text-gray-400 mb-2">EMAIL:</h3>
-          <a href="mailto:hello@company.com" className="text-sm hover:text-white">
-            hello@company.com
-          </a>
-          <a href="mailto:support@company.com" className="text-sm hover:text-white">
-            support@company.com
+          <h3 className="text-sm mx-auto text-gray-400 mb-2">EMAIL:</h3>
+          <a href="mailto:info@21stcenturycaps.com" className="text-sm mx-auto hover:text-white">
+          info@21stcenturycaps.com
           </a>
         </div>
 
         {/* Phone Section */}
         <div className="flex flex-col items-start">
-          <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
-            <Phone className="w-6 h-6" />
+          <div className="flex mx-auto items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
+            {/* <Phone className="w-6 h-6" /> */}
+            <img className='h-6 w-6' src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" alt="" />
           </div>
-          <h3 className="text-sm text-gray-400 mb-2">CALL US:</h3>
-          <a href="tel:1234567891" className="text-sm hover:text-white">
-            1 (234) 567-891
-          </a>
-          <a href="tel:1234987654" className="text-sm hover:text-white">
-            1 (234) 987-654
+          <h3 className="text-sm mx-auto text-gray-400 mb-2">CALL US:</h3>
+          <a href="tel:+91 9602467685" className="text-sm mx-auto hover:text-white">
+            +91 9602467685 
           </a>
         </div>
 
         {/* Contact Us Section */}
         <div className="flex flex-col items-start">
-          <h3 className="text-sm text-gray-400 mb-2">CONTACT US</h3>
-          <p className="text-sm mb-4">
+          <h3 className="text-xl mx-auto text-gray-400 mb-2">CONTACT US</h3>
+          <p className="text-sm mx-auto text-center mb-4">
             Contact us for a quote. Help<br />
             or to join the team.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mx-auto">
             <a href="#" className="hover:text-white">
               <span className="sr-only">Facebook</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
