@@ -17,33 +17,50 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
+    <div className="max-w-md mx-auto bg-gray-800 text-white rounded-lg p-6">
+      <h2 className="text-xl font-semibold mb-6">Write us</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
-          <label htmlFor="user_name" className="block text-sm font-medium text-gray-700">Name</label>
-          <input type="text" name="user_name" required placeholder="Enter your name"
-                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input
+            name = "user_name"
+            required
+            type="text"
+            placeholder="Name"
+            className="w-full bg-transparent border-b border-gray-600 p-2 outline-none focus:border-gray-400 transition-colors"
+          />
         </div>
         <div>
-          <label htmlFor="user_email" className="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" name="user_email" required placeholder="Enter your email"
-                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input
+            name = "user_email"
+            required
+            type="email"
+            placeholder="Email"
+            className="w-full bg-transparent border-b border-gray-600 p-2 outline-none focus:border-gray-400 transition-colors"
+          />
         </div>
         <div>
-          <label htmlFor="user_phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
-          <input type="tel" name="user_phone" required placeholder="Enter your phone number"
-                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input
+            name = "user_phone"
+            type="number"
+            placeholder="Phone"
+            className="w-full bg-transparent border-b border-gray-600 p-2 outline-none focus:border-gray-400 transition-colors"
+          />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-          <textarea name="message" required placeholder="Enter your message"
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" rows="4"></textarea>
+          <textarea
+            name = "message"
+            required
+            placeholder="Message"
+            rows={4}
+            className="w-full bg-transparent border-b border-gray-600 p-2 outline-none focus:border-gray-400 transition-colors"
+          />
         </div>
-        <div>
-          <input type="submit" value="Send Message"
-                 className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-[#EFEFE5] hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 cursor-pointer" />
-        </div>
+        <button
+          type="submit"
+          className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded transition-colors"
+        >
+          Send Message
+        </button>
       </form>
     </div>
   );
