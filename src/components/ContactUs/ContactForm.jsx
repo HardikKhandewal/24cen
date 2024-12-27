@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-gray-800 text-white rounded-lg p-6">
+    <div className="max-w-md mx-4 md:mx-auto bg-gray-800 text-white rounded-lg p-6">
       <h2 className="text-xl font-semibold mb-6">Write us</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>

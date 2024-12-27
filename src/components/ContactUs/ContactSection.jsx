@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <div className="bg-slate-800 text-gray-300 h-[360px] p-8 w-[480px] rounded-l-3xl">
+    <div className="bg-slate-800 text-gray-300 h-[400px] sm:h-[360px] p-8 w-full sm:w-[480px] sm:rounded-l-3xl">
       <div className="grid grid-cols-2 gap-8">
         {/* Address Section */}
         <div className="flex flex-col items-start">
