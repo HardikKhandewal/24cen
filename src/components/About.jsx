@@ -16,7 +16,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-36 bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
@@ -44,30 +44,29 @@ const About = () => {
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-              Transforming Ideas Into
-              <span className="text-[#F59542]"> Digital Reality</span>
+            Sealing Excellence, 
+            <span className="text-[#F59542]"> Securing Trust</span>
             </h2>
             
             <p className="text-gray-600 leading-relaxed">
-              We are passionate about delivering exceptional digital solutions that drive business growth. 
-              Our team of experts combines creativity with technical excellence to transform your vision into reality.
+            We specialize in manufacturing high-quality caps for various packaging needs. With a commitment to precision and innovation, we provide reliable sealing solutions that enhance product integrity and brand value.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#F59542] rounded-full"></div>
-                  <h4 className="font-semibold">Innovation First</h4>
+                  <h4 className="font-semibold">Innovation in Every Seal</h4>
                 </div>
-                <p className="text-gray-600 text-sm">Pioneering new solutions for digital challenges</p>
+                <p className="text-gray-600 text-sm">Crafting cutting-edge cap solutions for diverse industries.</p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#F59542] rounded-full"></div>
-                  <h4 className="font-semibold">Client Focus</h4>
+                  <h4 className="font-semibold">Client-Centric Approach</h4>
                 </div>
-                <p className="text-gray-600 text-sm">Your success is our primary mission</p>
+                <p className="text-gray-600 text-sm">Your packaging, our expertise—delivering excellence, every time.</p>
               </div>
             </div>
           </div>
@@ -89,13 +88,12 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  To empower businesses through innovative digital solutions that drive growth and success. 
-                  We're committed to delivering excellence in every project while fostering lasting partnerships.
+                To provide high-quality, precision-engineered caps that enhance product safety and brand appeal. We are committed to innovation, excellence, and building lasting partnerships with our clients.
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#F59542] rounded-full"></div>
-                    <span className="text-gray-600">Client-Centric Approach</span>
+                    <span className="text-gray-600">Quality-Driven Manufacturing</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#F59542] rounded-full"></div>
@@ -110,13 +108,12 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  To be the global leader in digital transformation, setting new standards of excellence 
-                  and innovation while creating meaningful impact for our clients and communities.
+                To be a global leader in cap manufacturing by driving innovation, sustainability, and excellence. We aim to set industry benchmarks with cutting-edge solutions that enhance packaging integrity and customer satisfaction.
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#F59542] rounded-full"></div>
-                    <span className="text-gray-600">Global Leadership</span>
+                    <span className="text-gray-600">Innovation at the Core</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#F59542] rounded-full"></div>
@@ -131,8 +128,7 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Promise</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We promise to deliver exceptional quality, maintain transparency, and exceed expectations 
-                  in every project while fostering innovation and sustainable growth.
+                To deliver high-quality, precision-engineered caps that ensure product safety, reliability, and brand distinction. We stand by our commitment to excellence, innovation, and customer satisfaction.
                 </p>
                 <ul className="mt-4 space-y-2">
                   <li className="flex items-center gap-2">
@@ -141,7 +137,8 @@ const About = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-[#F59542] rounded-full"></div>
-                    <span className="text-gray-600">Continuous Support</span>
+                    <span className="text-gray-600">Customer-First Approach
+                    </span>
                   </li>
                 </ul>
               </div>

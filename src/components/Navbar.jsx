@@ -88,11 +88,11 @@ const Navbar = () => {
                 <div className="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                   <div className="bg-white rounded-lg shadow-xl p-4 space-y-2">
                     {[
-                      { path: '/products/spiritclosures', label: 'Spirit Closures' },
-                      { path: '/products/wineclosures', label: 'Wine Closures' },
-                      { path: '/products/pharmaclosures', label: 'Pharma Closures' },
-                      { path: '/products/oliveoilclosures', label: 'Olive Oil Closures' },
-                      { path: '/products/printedmetalsheets', label: 'Plain and Printed Aluminium Sheets' }
+                      { path: '/products', label: 'Spirit Closures' },
+                      { path: '/products', label: 'Wine Closures' },
+                      { path: '/products', label: 'Pharma Closures' },
+                      { path: '/products', label: 'Olive Oil Closures' },
+                      { path: '/products', label: 'Plain and Printed Aluminium Sheets' }
                     ].map((item) => (
                       <Link
                         key={item.path}
@@ -167,11 +167,11 @@ const Navbar = () => {
               <div className="text-lg text-gray-800 mb-2">Products</div>
               <div className="pl-4 space-y-2">
                 {[
-                  { path: '/products/spiritclosures', label: 'Spirit Closures' },
-                  { path: '/products/wineclosures', label: 'Wine Closures' },
-                  { path: '/products/pharmaclosures', label: 'Pharma Closures' },
-                  { path: '/products/oliveoilclosures', label: 'Olive Oil Closures' },
-                  { path: '/products/printedmetalsheets', label: 'Plain and Printed Aluminium Sheets' }
+                  { path: '/products', label: 'Spirit Closures' },
+                  { path: '/products', label: 'Wine Closures' },
+                  { path: '/products', label: 'Pharma Closures' },
+                  { path: '/products', label: 'Olive Oil Closures' },
+                  { path: '/products', label: 'Plain and Printed Aluminium Sheets' }
                 ].map((item) => (
                   <Link
                     key={item.path}

@@ -11,13 +11,13 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="py-[102px]">
       <Carousel />
       <AboutSm />
       <ShowcasePro />
       <Milestones />
       <WhyUs />
-    </>
+    </div>
   );
 };
 
