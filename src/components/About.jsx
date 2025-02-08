@@ -1,12 +1,6 @@
 import React from 'react';
 
 const About = () => {
-  const stats = [
-    { number: "10+", label: "Years Experience" },
-    { number: "200+", label: "Projects Completed" },
-    { number: "50+", label: "Team Members" },
-    { number: "95%", label: "Client Satisfaction" }
-  ];
 
   const coreValues = [
     { title: "Innovation", description: "Pushing boundaries with cutting-edge solutions" },
@@ -29,8 +23,8 @@ const About = () => {
                 className="rounded-2xl shadow-2xl object-cover w-full"
               />
               <div className="absolute -bottom-6 -right-6 bg-[#F59542] rounded-2xl p-6 text-white shadow-lg">
-                <p className="text-3xl font-bold">10+</p>
-                <p className="text-sm">Years of Excellence</p>
+                <p className="text-3xl font-bold">15+</p>
+                <p className="text-sm">Years of Experience</p>
               </div>
             </div>
           </div>
