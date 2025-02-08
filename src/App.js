@@ -9,6 +9,7 @@ import Pharma from "./components/Products/Pharma";
 import Olive from "./components/Products/Olive";
 import PrintedSheets from "./components/Products/PrintedSheets";
 import Contact from "./components/ContactUs/Contact";
+import About from "./components/About";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/products/pharmaclosures" element={<Pharma />} />
           <Route path="/products/oliveoilclosures" element={<Olive />} />
           <Route path="/products/printedmetalsheets" element={<PrintedSheets />} />
+          <Route path="/AboutUs" element={<About/>} />
           <Route path="/Contact" element={<Contact />} />
           
         </Routes>
