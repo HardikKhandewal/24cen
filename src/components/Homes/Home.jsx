@@ -4,6 +4,7 @@ import AboutSm from "./AboutSm";
 import ShowcasePro from "./ShowcasePro";
 import Milestones from "./Milestones";
 import WhyUs from "./WhyUs";
+import ContactPage from "../ContactUs/Contact";
 
 const Home = () => {
   useEffect(() => {
@@ -11,12 +12,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="py-[102px]">
+    <div className="pt-[102px]">
       <Carousel />
       <AboutSm />
       <ShowcasePro />
       <Milestones />
       <WhyUs />
+      <ContactPage />
     </div>
   );
 };

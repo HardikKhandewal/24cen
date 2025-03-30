@@ -18,7 +18,7 @@ const About = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative">
               <img 
-                src="https://lic-pension-plans.com/wp-content/uploads/2020/07/about-us-for-LIC-pension-plans.jpg"
+                src="https://st2.depositphotos.com/3591429/8816/i/450/depositphotos_88168228-stock-photo-about-us-support-service-concept.jpg"
                 alt="About Us"
                 className="rounded-2xl shadow-2xl object-cover w-full"
               />

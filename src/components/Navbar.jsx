@@ -31,12 +31,21 @@ const Navbar = () => {
   const navLinkClass = `relative group px-4 py-2 transition-all duration-300 hover:text-[#f59542]`;
   const navLinkUnderline = `absolute left-0 bottom-0 w-full h-0.5 bg-[#f59542] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`;
 
+  // Product categories for dropdown
+  const productCategories = [
+    { path: '/products?category=Spirit closures', label: 'Spirit Closures' },
+    { path: '/products?category=Wine closures', label: 'Wine Closures' },
+    { path: '/products?category=Pharma closures', label: 'Pharma Closures' },
+    { path: '/products?category=Olive oil closures', label: 'Olive Oil Closures' },
+    { path: '/products?category=Printed metal sheets', label: 'Plain and Printed Aluminium Sheets' }
+  ];
+
   return (
     <nav className={`fixed top-0 w-full z-50 bg-[#EFEFE5] transition-all duration-300 ${
       isScrolled ? 'shadow-lg' : ''
     }`}>
       <div className={`max-w-7xl mx-auto px-4 transition-all duration-300 ${
-        isScrolled ? 'py-2' : 'py-4'
+        isScrolled ? 'py-2' : 'py-2'
       }`}>
         <div className="flex h-full items-center justify-between">
           {/* Logo */}
@@ -45,7 +54,7 @@ const Navbar = () => {
               src="/logo.jpg" 
               alt="Logo" 
               className={`transition-all duration-300 ${
-                isScrolled ? 'h-[56px]' : 'h-[70px]'
+                isScrolled ? 'h-[64px]' : 'h-[84px]'
               }`}
             />
           </Link>
@@ -74,26 +83,20 @@ const Navbar = () => {
 
               {/* Products Dropdown */}
               <div className="relative group">
-                <Link 
-                  to="/products"
-                  className={`${navLinkClass} ${
-                    isActive('/products') ? 'text-[#f59542]' : 'text-black'
-                  }`}
-                >
-                  Products
-                  <span className={`${navLinkUnderline} ${
-                    isActive('/products') ? 'scale-x-100' : ''
-                  }`} />
-                </Link>
+              <Link 
+                to="/products"
+                className={`${navLinkClass} ${
+                  isActive('/products') ? 'text-[#f59542]' : 'text-black'
+                }`}
+              >
+                Products
+                <span className={`${navLinkUnderline} ${
+                  isActive('/products') ? 'scale-x-100' : ''
+                }`} />
+              </Link>
                 <div className="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                   <div className="bg-white rounded-lg shadow-xl p-4 space-y-2">
-                    {[
-                      { path: '/products', label: 'Spirit Closures' },
-                      { path: '/products', label: 'Wine Closures' },
-                      { path: '/products', label: 'Pharma Closures' },
-                      { path: '/products', label: 'Olive Oil Closures' },
-                      { path: '/products', label: 'Plain and Printed Aluminium Sheets' }
-                    ].map((item) => (
+                    {productCategories.map((item) => (
                       <Link
                         key={item.path}
                         to={item.path}
@@ -109,8 +112,8 @@ const Navbar = () => {
 
             {/* Brochure Button */}
             <a
-              href="/brochure.pdf"
-              download="21st Century Caps Brochure.pdf"
+              href="/profile.pdf"
+              download="/profile.pdf"
               className={`inline-flex font-semibold text-lg items-center px-6 py-2 rounded-full bg-[#f59542] text-white transition-all duration-300 hover:bg-white hover:text-[#f59542] border border-[#f59542] ${
                 isScrolled ? 'text-sm' : 'text-base'
               }`}
@@ -166,13 +169,7 @@ const Navbar = () => {
             <div className="py-2">
               <div className="text-lg text-gray-800 mb-2">Products</div>
               <div className="pl-4 space-y-2">
-                {[
-                  { path: '/products', label: 'Spirit Closures' },
-                  { path: '/products', label: 'Wine Closures' },
-                  { path: '/products', label: 'Pharma Closures' },
-                  { path: '/products', label: 'Olive Oil Closures' },
-                  { path: '/products', label: 'Plain and Printed Aluminium Sheets' }
-                ].map((item) => (
+                {productCategories.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
@@ -184,19 +181,16 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-
-            
           </div>
-          
-      </div>
-      <a
-              href="/brochure.pdf"
-              download="21st Century Caps Brochure.pdf"
-              className="iinline-block w-full mx-4 px-6 py-2.5 rounded-full bg-[#f59542] text-white text-center font-medium hover:bg-white hover:text-[#f59542] border-2 border-[#f59542] transition-colors duration-300"
-            >
-              Our Brochure
-            </a>
         </div>
+        <a
+          href="/profile.pdf"
+          download="profile.pdf"
+          className="inline-block w-full mx-4 px-6 py-2.5 rounded-full bg-[#f59542] text-white text-center font-medium hover:bg-white hover:text-[#f59542] border-2 border-[#f59542] transition-colors duration-300"
+        >
+          Our Profile
+        </a>
+      </div>
     </nav>
   );
 };

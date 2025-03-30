@@ -30,9 +30,9 @@ const ShowcasePro = () => {
           
           <div className="relative w-full h-full cursor-pointer">
             {/* Default image */}
-            <Link to="/products/spiritclosures">
+            <Link to="/products?category=Spirit closures">
             <img
-              src="https://img.freepik.com/premium-psd/red-wine-cap-bottle-mockup_1119-936.jpg"
+              src="liqour-1.jpg"
               alt="Default"
               className="w-full h-full object-cover transition-opacity duration-500"
             />
@@ -65,9 +65,9 @@ const ShowcasePro = () => {
           {/* Image container */}
           <div className="relative w-full h-full cursor-pointer">
             {/* Default image */}
-            <Link to="/products/wineclosures">
+            <Link to="/products?category=Wine closures">
             <img
-              src="https://www.nipra.in/images/resource/service-2.jpg"
+              src="wine-6.jpeg"
               alt="Default"
               className="w-full h-full object-cover transition-opacity duration-500"
             />
@@ -99,7 +99,7 @@ const ShowcasePro = () => {
           {/* Image container */}
           <div className="relative w-full h-full cursor-pointer">
             {/* Default image */}
-            <Link to="/products/pharmaclosures">
+            <Link to="/products?category=Pharma closures">
             <img
               src="https://www.nipra.in/images/resource/service-3.jpg"
               alt="Default"
@@ -133,7 +133,7 @@ const ShowcasePro = () => {
           {/* Image container */}
           <div className="relative w-full h-full cursor-pointer">
             {/* Default image */}
-            <Link to="/products/oliveoilclosures">
+            <Link to="/products?category=Olive oil closures">
             <img
               src="	https://www.nipra.in/images/resource/service-4a.jpg"
               alt="Default"
@@ -166,7 +166,7 @@ const ShowcasePro = () => {
           {/* Image container */}
           <div className="relative w-full h-full cursor-pointer">
             {/* Default image */}
-            <Link to="/products/printedmetalsheets">
+            <Link to="/products?category=Printed metal sheets">
             <img
               src="https://www.nipra.in/images/resource/service-5a.jpg"
               alt="Default"
