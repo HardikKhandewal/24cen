@@ -118,7 +118,7 @@ const Navbar = () => {
                 isScrolled ? 'text-sm' : 'text-base'
               }`}
             >
-              Our Brochure
+              Our Profile
             </a>
           </div>
 

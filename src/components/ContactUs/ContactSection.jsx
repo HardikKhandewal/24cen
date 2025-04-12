@@ -7,7 +7,6 @@ const ContactSection = () => {
         {/* Address Section */}
         <div className="flex flex-col items-start">
           <div className="flex items-center mx-auto justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
-            {/* <MapPin className="w-6 h-6" /> */}
             <img className='h-6 w-6' src="https://img.icons8.com/?size=100&id=0gQCRCDXNz1D&format=png&color=FFFFFF" alt="" />
           </div>
           <h3 className="text-sm mx-auto text-gray-400 mb-2">ADDRESS:</h3>
@@ -19,7 +18,6 @@ const ContactSection = () => {
         {/* Email Section */}
         <div className="flex flex-col items-start">
           <div className="flex mx-auto items-center justify-center w-12 h-12 rounded-full border border-gray-600 mb-4">
-            {/* <Mail className="w-6 h-6" /> */}
             <img className='w-6 h-6' src="https://img.icons8.com/?size=100&id=86862&format=png&color=FFFFFF" alt="" />
           </div>
           <h3 className="text-sm mx-auto text-gray-400 mb-2">EMAIL:</h3>

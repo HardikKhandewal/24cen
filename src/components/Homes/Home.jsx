@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; // Correct import of useEffect
+import React, { useEffect } from "react";
 import Carousel from "./Carousel";
 import AboutSm from "./AboutSm";
 import ShowcasePro from "./ShowcasePro";
@@ -8,7 +8,7 @@ import ContactPage from "../ContactUs/Contact";
 
 const Home = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   }, []);
 
   return (

@@ -19,8 +19,8 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 3000); // Change slide every 3 seconds
-    return () => clearInterval(interval); // Cleanup on component unmount
+    const interval = setInterval(handleNext, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
