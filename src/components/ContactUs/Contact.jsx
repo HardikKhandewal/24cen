@@ -101,7 +101,7 @@ const ContactPage = () => {
                     
                     {/* Instagram */}
                     <a
-                      href="#instagram"
+                      href="https://www.instagram.com/21stcenturycaps?igsh=MTF1MW5lZHExN2IxYw=="
                       className="rounded-full w-full h-8 px-1 border-2 border-gray-600 flex items-center justify-center hover:border-orange-400 hover:text-orange-400 hover:scale-110 transition-all duration-300"
                     >
                       <span className="sr-only">Instagram</span>

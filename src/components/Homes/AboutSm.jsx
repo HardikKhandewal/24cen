@@ -18,7 +18,7 @@ const AboutSection = () => {
         </div>
               
               <h3 className="text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
-                Crafting the Best Caps and{' '}
+                Crafting the Best <span className="text-orange-500">Caps</span> and{' '}
                 <span className="text-orange-500">Closures</span> for Global Brands
               </h3>
               
