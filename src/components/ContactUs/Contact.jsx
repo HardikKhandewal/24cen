@@ -7,7 +7,7 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_4mf1msq', 'template_6tx2rwg"', form.current, 'unzesMX_wSaJ-Yaqm')
+    emailjs.sendForm('service_4mf1msq', 'template_6tx2rwg"', form.current, 'CXd4tTub5FkG08mvK')
       .then((result) => {
         setFormSuccess(true);
         form.current.reset();
