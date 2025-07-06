@@ -22,7 +22,7 @@ const ContactForm = () => {
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
           <input
-            name = "user_name"
+            name = "from_name"
             required
             type="text"
             placeholder="Name"
@@ -31,7 +31,7 @@ const ContactForm = () => {
         </div>
         <div>
           <input
-            name = "user_email"
+            name = "from_email"
             required
             type="email"
             placeholder="Email"
@@ -40,7 +40,7 @@ const ContactForm = () => {
         </div>
         <div>
           <input
-            name = "user_phone"
+            name = "phone_number"
             required
             type="number"
             placeholder="Phone"
@@ -62,6 +62,16 @@ const ContactForm = () => {
         >
           Send Message
         </button>
+        <button
+                type="button"
+                onClick={() =>
+                  window.open(
+                    'https://wa.me/+919602467685?text=Hi!%20I\'m%20reaching%20out%20from%20your%20website.%20I%20would%20like%20to%20know%20more%20about%20your%20products.',
+                    '_blank'
+                  )
+                }
+                className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-8 rounded-xl font-medium hover:from-green-600 hover:to-green-700 transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+              ></button>
       </form>
     </div>
   );
