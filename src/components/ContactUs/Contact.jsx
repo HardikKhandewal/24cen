@@ -7,7 +7,7 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_vvb9f98', 'template_mspnwdo', form.current, 'unzesMX_wSaJ-Yaqm')
+    emailjs.sendForm('service_4mf1msq', 'template_6tx2rwg"', form.current, 'unzesMX_wSaJ-Yaqm')
       .then((result) => {
         setFormSuccess(true);
         form.current.reset();
@@ -54,8 +54,8 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <h3 className="text-sm font-semibold tracking-wider text-orange-400 text-center mb-3">EMAIL</h3>
-                  <a href="mailto:info@21stcenturycaps.com" className="text-sm text-center block hover:text-orange-400 transition-colors duration-300">
-                    info@21stcenturycaps.com
+                  <a href="hardik21stcenturycaps@gmail.com" className="text-sm text-center block hover:text-orange-400 transition-colors duration-300">
+                    hardik21stcenturycaps@gmail.com
                   </a>
                 </div>
 

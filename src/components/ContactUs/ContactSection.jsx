@@ -21,8 +21,8 @@ const ContactSection = () => {
             <img className='w-6 h-6' src="https://img.icons8.com/?size=100&id=86862&format=png&color=FFFFFF" alt="" />
           </div>
           <h3 className="text-sm mx-auto text-gray-400 mb-2">EMAIL:</h3>
-          <a href="mailto:info@21stcenturycaps.com" className="text-sm mx-auto hover:text-white">
-          info@21stcenturycaps.com
+          <a href="hardik21stcenturycaps@gmail.com" className="text-sm mx-auto hover:text-white">
+          hardik21stcenturycaps@gmail.com
           </a>
         </div>
 
