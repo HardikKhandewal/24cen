@@ -149,7 +149,7 @@ const ContactPage = () => {
                   <input
                     required
                     type="text"
-                    name="user_name"
+                    name="from_name"
                     className="peer w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:border-orange-500 focus:outline-none py-3 bg-transparent transition-colors duration-300"
                     placeholder="Name"
                   />
@@ -162,7 +162,7 @@ const ContactPage = () => {
                   <input
                     required
                     type="email"
-                    name="user_email"
+                    name="from_email"
                     className="peer w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:border-orange-500 focus:outline-none py-3 bg-transparent transition-colors duration-300"
                     placeholder="Email"
                   />
@@ -176,7 +176,7 @@ const ContactPage = () => {
                 <input
                   required
                   type="tel"
-                  name="user_phone"
+                  name="phone_number"
                   className="peer w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:border-orange-500 focus:outline-none py-3 bg-transparent transition-colors duration-300"
                   placeholder="Phone"
                 />
