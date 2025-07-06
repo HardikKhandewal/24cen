@@ -66,7 +66,7 @@ const ContactForm = () => {
                 type="button"
                 onClick={() =>
                   window.open(
-                    'https://wa.me/+919602467685?text=Hi!%20I\'m%20reaching%20out%20from%20your%20website.%20I%20would%20like%20to%20know%20more%20about%20your%20products.',
+                    'https://wa.me/+919602467685?text=Hi%2021st%20Century%20Caps!%20I\'m%20reaching%20out%20from%20your%20website.%20I%20would%20like%20to%20know%20more%20about%20your%20products.',
                     '_blank'
                   )
                 }
